@@ -11,6 +11,7 @@ Instead of tracking tasks, the app tracks progress slices.
 Not:
 “Finish English essay”
 But:
+
 “Write 120 words”
 “Find 2 quotes”
 “Fix one paragraph”
