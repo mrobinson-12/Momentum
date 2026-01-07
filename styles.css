@@ -1,0 +1,53 @@
+div.container {
+  display: flex;
+  flex-direction: column;
+  margin-top: 50px;
+  width: 35%;
+  margin: 50px auto;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Arimo", sans-serif;
+  color: rgb(40, 40, 40);
+}
+
+body {
+  background: linear-gradient(to right, #6A5ACD, #9656e3);
+}
+
+.content {
+  max-width: 600px;  
+  width: 100%;
+  margin: 0 auto;    
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+}
+
+.card {
+  background: rgba(255, 255, 255, 0.6);
+  border-radius: 12px;
+  padding: 30px;
+  max-width: 500px;
+  margin: 50px auto;
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.12);
+}
+.card button {
+  margin-top: 16px;
+  border: none;
+  background: #6A5ACD;
+  color: white;
+  cursor: pointer;
+}
+.card input,
+.card textarea,
+.card button {
+  width: 100%;
+  padding: 12px;
+  margin-top: 10px;
+  border-radius: 8px;
+  border: 1px solid #ddd;
+  font-size: 16px;
+  box-sizing: border-box;
+}

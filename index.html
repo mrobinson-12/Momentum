@@ -1,24 +1,40 @@
 <!DOCTYPE html>
 <html lang="en">
     <head>
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Arimo:ital,wght@0,400..700;1,400..700&display=swap" rel="stylesheet">
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <title>Momentum</title>
         <link rel="stylesheet" href="styles.css">
         <script defer src="script.js"></script>
-        <h1>Momentum</h1>
-        <h3>A tiny app that stops schoolwork from quietly ruining your life.</h3>
     </head>
     <body>
-        <div style="display: flex; flex-direction: grid;  margin-top: 50px;">
-            <h4>Add a new task:</h4>
-            <input type="text" name="subject" id="subject-input">
-            <h4>Due Date:</h4>
-            <input type="date" name="Due Date" id="due-date-input">
-            <button id="add-button">Add</button>
+
+        <div class="container">
+            <div class="content">
+                <div class="card">
+                    <h1>Momentum</h1>
+                    <h3>A tiny app that stops schoolwork from quietly ruining your life.</h3>
+                    <h4>Add a new task:</h4>
+                    <input type="text" name="subject" id="subject-input">
+                    <h4>Due Date:</h4>
+                    <input type="date" name="Due Date" id="due-date-input">
+                    <button id="add-button" onclick="sendRequest()">Get task</button>
+                    <h4>OpenAI API Key:</h4>
+                
+                    <input type="text" name="openai" id="openai-api-key" placeholder="Enter OpenAI API Key">
+                    <h3>Do this today:</h3>
+                    <textarea id="responseArea" rows="6" readonly width="100%"></textarea>
+                </div>
+            </div>
         </div>
-        <h3>Do this today:</h3>
+        
+        <h3>
+
         <ul id="today-task-list"></ul>
+
 
     </body>
 </html>
