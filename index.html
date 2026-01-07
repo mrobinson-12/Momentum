@@ -17,15 +17,19 @@
                 <div class="card">
                     <h1>Momentum</h1>
                     <h3>A tiny app that stops schoolwork from quietly ruining your life.</h3>
+                    <h5>Big or Vague projects work best</h5>
                     <h4>Add a new task:</h4>
                     <input type="text" name="subject" id="subject-input">
+                    
                     <h4>Due Date:</h4>
                     <input type="date" name="Due Date" id="due-date-input">
                     <button id="add-button" onclick="sendRequest()">Get task</button>
                     <h4>OpenAI API Key:</h4>
-                
+                    
                     <input type="text" name="openai" id="openai-api-key" placeholder="Enter OpenAI API Key">
+                    <h5>Used locally. Never stored.</h5>
                     <h3>Do this today:</h3>
+
                     <textarea id="responseArea" rows="6" readonly width="100%"></textarea>
                 </div>
             </div>
